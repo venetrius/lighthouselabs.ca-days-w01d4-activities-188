@@ -19,7 +19,7 @@ function compare(a,b){
   }else if (a.name < b.name){
     return -1;
   }
-  return a.age > b.age ? 1 : ((a.age === b.age) ? 0 : -1 );
+  return a.age > b.age ? -1 : ((a.age === b.age) ? 0 : 1 );
 }
 
  console.log(students.sort(compare));
