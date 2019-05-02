@@ -11,3 +11,15 @@ var students = [
 
 /* spec : Write a sorting function (sometimes called a custom comparator),
  that sorts the above array first by the name ascending alphabetically, and in cases where the names are equal sort by descending age. */
+
+
+function compare(a,b){
+  if (a.name > b.name){
+    return 1;
+  }else if (a.name < b.name){
+    return -1;
+  }
+  return a.age > b.age ? 1 : ((a.age === b.age) ? 0 : -1 );
+}
+
+ console.log(students.sort(compare));
